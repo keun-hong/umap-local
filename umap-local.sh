@@ -18,7 +18,7 @@ date
 echo ""
 ## ------------------------------------
 # Variables
-out_folder='mappability'
+out_folder="mappability_${in_genome%.fa}"
 # Variables (auto-detected)
 BOWTIEDIR=$(which bowtie|sed 's/\/bowtie//')
 THREADS=$(expr $(nproc) - 2) # Max number of threads - 2
